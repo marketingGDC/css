@@ -1,0 +1,152 @@
+/* Import Raleway Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	text-align: justify !important;
+	font-family: 'Raleway', Arial bold, sans-serif !important;
+	text-overflow: ellipsis !important;
+}
+
+/* -------------------- GENERAL SETTINGS -------------------- */
+
+/* This is the styling for main feed container - NOTE: the background-color affects the footer background.*/
+#fw-container {
+	padding: 5px 5px 5px 5px !important;
+	border: 1px solid #cccece !important;
+	border-radius: 4px !important;
+	box-sizing: border-box !important;
+	background-color:#f27e20 !important;
+
+}
+
+#fw-feed-items-scroll-area {
+	background-color: #f7f7f7 !important;
+	border-radius: 4px !important;
+	border-left: 2px inset #cccece !important;
+	border-top: 2px inset #cccece !important;
+	box-shadow: 5px 5px 5px #888888 inset !important;
+}
+
+/* --------------------  HEADER -------------------- */
+
+/* This is the styling for the main Feed Title in the header container*/
+.fw-feed-title {
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	word-wrap: break-word !important; 
+	background-color:#f27e20 !important;
+	border: none !important;
+	font-size: large !important;
+}
+
+/* This is the styling for the Feed Title link in the header container*/
+.fw-feed-title a {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+
+/* -------------------- BODY -------------------- */
+/* This is the styling for the feed body (i.e all Feed Items) container. */
+/* WARNING: be careful adding Left or Right Padding as you can lose the scrollbar when the L/R padding is set to more than 8px; the scrollwheel on a mouse still works however, but the scrollbar can disappear after 8px of padding either side. Use Margins instead add space around the content container.*/
+
+/* This is the general setting for feed items */
+.fw-feed-item {
+	display:block !important;
+	margin: 20px 20px 20px 20px  !important;
+	padding: 0px !important;
+	box-shadow: 5px 5px 5px #888888 !important;
+	border-right: 1px solid #cccece !important;
+	border-top: 1px solid #cccece !important;
+	border-radius: 8px !important;
+}
+
+.fw-feed-item:hover {
+	margin: 20px 20px 20px 20px !important;
+	padding: 0px !important;
+}
+
+.fw-feed-item-url {
+	background-color: #ffffff !important;
+	border-radius: inherit !important;
+}
+
+/* This is the styling for the Feed Item content in the body container*/
+.fw-feed-item-content-module {
+	position: relative !important;
+	margin: 20px 30px 20px 150px !important;
+	padding: 5px 5px 5px 5px !important;
+	height: 150px !important;
+	width: auto !important;
+	background-color: #fff !important;
+	border-left: 4px solid #f27e20 !important;
+	z-index: 1 !important;
+}
+
+/* This is the styling for the Feed Item Title in the body container*/
+.fw-feed-item-title {
+	text-align: left !important;
+	padding: 0px !important;
+	margin:0px !important;
+	color: #f27e20 !important;
+	font-weight: bold !important;
+	font-size: large !important;
+	height: 25px !important;
+}
+
+/* This is the styling for Feed Item Title link in the body container*/
+.fw-feed-item-title a{
+	color: #f27e20 !important;
+	text-decoration: none !important;
+	font-size: 16px !important;
+	padding: 0px !important;
+	margin:0px !important;
+}
+
+/* This is the styling for the Description in a Feed Item (i.e. the text of a Feed Item in Thumbnail mode, or text+images in Full HTML mode)*/
+.fw-feed-item-description {
+	font-size: 12px !important;
+	padding: 0px !important;
+	margin:0px !important;
+	color: #000 !important;
+	font-weight: 300 !important;
+	word-wrap: break-word !important;
+	text-decoration:none !important;
+	display:block !important;
+	height: 125px !important;
+}
+
+/* This is the styling for a Feed Item Thumbnail - Thumbnail size and layout/orientation can be set here. This does not affect a YouTube video thumbnail.*/
+.fw-feed-item-image {
+	width: 400px !important;
+	height: 400px !important;
+	float: left !important;
+	text-align: left !important;
+	margin: 0px -50px 0px 0px !important;
+	border-right: 1px solid #cccece !important;
+}
+
+.fw-feed-item-image-module {
+	margin: 0px 0px 0px 0px !important;
+}
+
+
+
+/* -------------------- FOOTER -------------------- */
+
+/* This styling allows you to create a footer and style it. By default the footer size is set to zero. */
+.fw-branding {
+	height: 0px !important;
+	margin: 0px !important;
+	visibility: hidden !important;
+} 
+
+/* These control the scrollbar and scrollbar background colors */
+/* NOTE: the ! important tag is used here to override any other CSS controlling the scrollbar appearance */
+/* .jspTrack{background: #aec5e8 !important;} */
+/* Adjust vertical scroll bar dimension (width)*/
+/* .jspVerticalBar {width: 63px !important;} */
+/* Change the attributes of the scrollbar background */
+ /* .jspDrag{background: #4e82d0!important;} */
